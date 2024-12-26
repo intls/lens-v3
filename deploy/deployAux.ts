@@ -6,12 +6,12 @@ import {
   verifyPrimitive,
   deployContract,
 } from './utils';
-import { ethers, ZeroAddress } from 'ethers';
+import { ethers } from 'ethers';
 
 const metadataURI = 'https://ipfs.io/ipfs/QmZ';
 
 export const emptySourceStamp = {
-  source: ZeroAddress,
+  source: ethers.constants.AddressZero,
   nonce: 0,
   deadline: 0,
   signature: '0x',
